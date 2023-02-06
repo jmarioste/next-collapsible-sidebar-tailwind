@@ -5,8 +5,12 @@ import {
   HomeIcon,
   UserGroupIcon,
 } from "@heroicons/react/24/outline";
-import { NavItem } from "./Sidebar";
-
+// define a NavItem prop
+export type NavItem = {
+  label: string;
+  href: string;
+  icon: React.ReactNode;
+};
 export const defaultNavItems: NavItem[] = [
   {
     label: "Dashboard",
